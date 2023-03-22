@@ -2,7 +2,7 @@
 
 int _islower(int c)
 {
-if (c != 'c')
+if (c >= 'a' && c <= 'z')
 {
 _putchar('1');
 }
