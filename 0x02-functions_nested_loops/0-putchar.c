@@ -1,5 +1,8 @@
 #include"main.h"
-
+/**
+ * main - a program that prints _putchar
+ *
+ * Return=(0)
 int main(void)
 {
 putchar('_');
@@ -11,5 +14,5 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
-return(0);
+return (0);
 }
