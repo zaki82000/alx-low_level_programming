@@ -2,7 +2,7 @@
 
 int main(void)
 {
-_putchar("_");
+int _putchar("_");
 int _putchar("p");
 int _putchar("u");
 int _putchar("t");
