@@ -13,6 +13,6 @@ for (i=0; 1<10; i++)
 {
 for (c='a'; c<='z'; c++)
 	putchar(c);
-}
 putchar('\n');
+}
 }
