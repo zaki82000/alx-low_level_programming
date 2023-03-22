@@ -6,6 +6,9 @@ if (c != 'c')
 {
 putchar('1');
 }
-else
+else 
+{
 putchar('0');
+}
+return(0);
 }
