@@ -6,5 +6,6 @@
  *Return: return mulitpiles a nd b.
  */
 int mul(int a, int b)
-
+{
 	return (a * b);
+}
