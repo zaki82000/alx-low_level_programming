@@ -12,21 +12,21 @@ int _atoi(char *s)
 
     while (*s)
     {
-        if (*s == '-' || *s == '+')
-        {
-            if (*s == '-')
-                sign *= -1;
-            s++;
-        }
-        if (*s >= '0' && *s <= '9')
+        if (*s == '-')
+            sign *= -1;
+        else if (*s >= '0' && *s <= '9')
         {
             num = num * 10 + (*s - '0');
-            s++;
         }
         else if (num > 0)
+        {
             break;
-        else
-            s++;
+        }
+        else if (*s != ' ' && *s != '+')
+        {
+            sign = 1;
+        }
+        s++;
     }
 
     return sign * num;
