@@ -24,16 +24,16 @@ char *_strncat(char *dest, char *src, int n)
 				{
 					*dest_temp++ = *src_temp++;
 					n--;
-				
+
 				}
 					else
 					{
 						break;
-					
+
 					}
-						
+
 						*dest_temp = '\0';
-						
+
 							return (dest);
 
 
