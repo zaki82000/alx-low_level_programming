@@ -2,8 +2,8 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase,
- * temp: =*ch.
- * @ch: a pointer in function.
+ * temp: =*s.
+ * @s: a pointer in function.
  * Return: s to string.
  */
 char *string_toupper(char *s)
