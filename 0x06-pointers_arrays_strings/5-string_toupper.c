@@ -13,7 +13,7 @@ char *string_toupper(char *ch)
 char *temp = ch;
 
 while
-	(*temp != '\0');
+	(*temp);
 {
 
 if (*temp >= 'a' && *temp < 'z')
