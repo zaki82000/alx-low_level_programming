@@ -7,10 +7,10 @@
  * Return: s to string.
  */
 
-char *string_toupper(char *ch)
+char *string_toupper(char *s)
 {
 
-char *temp = ch;
+char *temp = s;
 
 while
 	(*temp)
@@ -22,7 +22,8 @@ if (*temp >= 'a' && *temp < 'z')
 
 	*temp = *temp - 31;
 }
+
 temp++;
 		}
-return (ch);
+return (s);
 }
