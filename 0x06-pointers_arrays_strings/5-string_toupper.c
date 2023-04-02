@@ -12,9 +12,9 @@ char *string_toupper(char *ch)
 char *temp = ch;
 
 while
-        (*temp != '\0');
+	(*temp != '\0');
 {
-for (*temp = 'A'; *temp <= 'Z'; temp++)
+for (*temp >= 'a'; *temp < 'Z'; temp++)
 {
 
 	*temp = *temp - 31;
