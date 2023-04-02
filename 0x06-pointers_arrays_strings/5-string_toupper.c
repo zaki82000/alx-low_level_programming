@@ -9,16 +9,20 @@
 
 char *string_toupper(char *ch)
 {
+
 char *temp = ch;
 
 while
 	(*temp != '\0');
 {
-for (*temp >= 'a'; *temp < 'Z'; temp++)
+
+if (*temp >= 'a' && *temp < 'z')
+
 {
 
 	*temp = *temp - 31;
 }
+temp++;
 		}
 return (ch);
 }
