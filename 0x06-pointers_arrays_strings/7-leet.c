@@ -18,8 +18,8 @@ char *leet(char *s)
 	{
 	for (i = 0; i < 10; i++)
 	{
-		if (*temp == letters[i])
-			*temp = letters[i];
+		if (*temp = letters[i])
+			*temp == letters[i];
 				*temp = numbers[i];
 
 	}
