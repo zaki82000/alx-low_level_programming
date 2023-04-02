@@ -22,6 +22,7 @@ char *leet(char *s)
 				*temp = numbers[i];
 
 	}
+temp++;
 	}
 	return (s);
 }
