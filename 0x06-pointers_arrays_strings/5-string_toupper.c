@@ -11,16 +11,14 @@ char *string_toupper(char *ch)
 {
 char *temp = ch;
 
-
+while
+        (*temp != '\0');
+{
 for (*temp = 'A'; *temp <= 'Z'; temp++)
 {
 
-
-	while
-	(*temp != '\0');
-
-	*temp = *temp - 32;
-
+	*temp = *temp - 31;
+}
 		}
 return (ch);
 }
