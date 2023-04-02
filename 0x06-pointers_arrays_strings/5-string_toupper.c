@@ -6,24 +6,19 @@
  * @ch: a pointer in function.
  * Return: s to string.
  */
-
 char *string_toupper(char *s)
 {
+	char *temp = s;
 
-char *temp = s;
-
-while
-	(*temp)
-{
-
-if (*temp >= 'a' && *temp < 'z')
-
-{
-
-	*temp = *temp - 31;
-}
-
-temp++;
+	while (*temp)
+	{
+		if (*temp >= 'a' && *temp < 'z')
+		{
+			*temp = *temp - 32;
 		}
-return (s);
+
+		temp++;
+	}
+
+	return (s);
 }
