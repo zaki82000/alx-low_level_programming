@@ -13,11 +13,13 @@ char *_strchr(char *s, char c)
         {
             return(temp);
         }
-        else
-        {
-        return ("Null");
-        }
+	
+	if (*temp != '\0')
+	{
+		return(0);
+	}
         temp++;
     }
-    return(s);
+      return(0);
+
 }
