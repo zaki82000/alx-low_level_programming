@@ -22,7 +22,7 @@ return (temp);
 
 temp++;
 }
-if (*temp != c)
+if (*temp == c)
 {
 return (s);
 }
