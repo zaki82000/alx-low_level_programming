@@ -24,7 +24,7 @@ temp++;
 }
 if (*temp == c)
 {
-return (s);
+return (temp);
 }
 return (0);
 }
