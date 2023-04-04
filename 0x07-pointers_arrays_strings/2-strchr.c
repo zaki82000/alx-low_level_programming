@@ -22,5 +22,13 @@ return (temp);
 
 temp++;
 }
+if (*temp == c)
+{
+return (temp);
+}
+if (*temp == c)
+{
+return (temp);
+}
 return (0);
 }
