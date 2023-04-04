@@ -23,11 +23,11 @@ unsigned int _strspn(char *s, char *accept)
 			len++;
 			break;
 			}
+		}
 			if (s[i] != accept[j])
 			{
 			return (len);
 			}
-		}
 	}
 	return (0);
 }
