@@ -18,9 +18,10 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-		if (*s != *accept)
+		if (*s == *accept)
 		{
 		return (s);
 		}
-	return (s);
+	
+	return (0);
 }
