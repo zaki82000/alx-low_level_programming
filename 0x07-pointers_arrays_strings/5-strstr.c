@@ -10,7 +10,7 @@ char *_strstr(char *haystack, char *needle)
                   }
                   haystack++;
           }
-                  if (*haystack == *needle)
+                  if (*haystack != *needle)
                  {
                  return (haystack);
                  }
