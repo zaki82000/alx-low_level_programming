@@ -4,14 +4,11 @@
 *_puts_recursion - function that prints a string,i:Length of srting.
 *@s: string.
 */
-
 void _puts_recursion(char *s)
 {
-int i;
-
-for (i = 0; i < s[i]; i++)
-{
-putchar (s[i]);
-}
-	putchar ('\n');
+if (*s == 0)
+return;
+putchar (*s);
+_puts_recursion(s+1);
+         
 }
