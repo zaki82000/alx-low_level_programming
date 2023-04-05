@@ -10,6 +10,6 @@ if (*s == 0)
 return;
 putchar (*s);
 _puts_recursion(s+1);
-if (*s != 0)
+if (*s)
 putchar ('\n');
 }
