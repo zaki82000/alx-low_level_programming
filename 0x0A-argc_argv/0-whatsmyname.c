@@ -3,6 +3,10 @@
 
 int main (int argc, char** argv)
 {
-	printf("argc = %d argv = %s\n", argc, *argv);
+	int i;
+	for (i = 0; i < argc; i++)
+	{
+	printf("%s\n", *argv);
+	}
 	return 0;
 }
