@@ -29,6 +29,9 @@ char *_strdup(char *str)
 		ptr = (char *) malloc(temp_size + 1);
 		ptr_temp = ptr;
 
+		if (ptr == NULL)
+		return (NULL);
+
 			while (*temp)
 			*ptr_temp++ = *temp++;
 			*ptr_temp = '\0';
