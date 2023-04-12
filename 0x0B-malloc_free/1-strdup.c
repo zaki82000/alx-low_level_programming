@@ -21,16 +21,16 @@ char *_strdup(char *str)
 
 		temp_size = strlen(temp);
 
-		if (temp == NULL)
-		{
-		return (NULL);
-		}
-
-		ptr = (char *) malloc(temp_size);
+		ptr = (char *) malloc(temp_size + 1);
 		ptr_temp = ptr;
 
 		if (ptr == NULL)
 		return (NULL);
+
+		if (temp == NULL)
+		{
+		return (NULL);
+		}
 
 			while (*temp)
 			*ptr_temp++ = *temp++;
