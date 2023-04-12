@@ -20,6 +20,12 @@ char *_strdup(char *str)
 	int temp_size;
 
 		temp_size = strlen(temp);
+
+		if (temp == NULL)
+		{
+		return (NULL);
+		}
+
 		ptr = (char *) malloc(temp_size + 1);
 		ptr_temp = ptr;
 
@@ -27,11 +33,6 @@ char *_strdup(char *str)
 			*ptr_temp++ = *temp++;
 			*ptr_temp = '\0';
 
-			if (temp == NULL)
-			{
-			return (NULL);
-			}
 	return (ptr);
 
 }
-
