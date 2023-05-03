@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+* struct list_t - struct to singel linked list
+* @str: pointer to string
+* @len: lenght to linked string
+* @next: pointer to address next node
+*/
+
 typedef struct list_t
 {
 char *str;
