@@ -6,24 +6,15 @@
 *
 * Return: return all elements of a list
 */
-
 size_t print_listint(const listint_t *h)
 {
-
-	const listint_t *temp = h;
-	unsigned int count = 0;
-
-		while (temp != NULL)
+	const listint_t *curr = h;
+	size_t count = 0;
+		while (curr != NULL)
 		{
-			if (temp->str != NULL)
-
-			printf("[%u] %s\n", temp->len, temp->str);
-
-			else
-			printf("[%u] %s\n", 0, "(nil)");
-
+			printf("%d\n", curr->n);
+			curr = curr->next;
 			count++;
-			temp = temp->next;
 		}
 	return (count);
 }
