@@ -17,12 +17,11 @@ return (-1);
 
 for (i = 0; i < size; i++)
 {
+printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 if (array[i] == value)
 {
-printf("Value checked array [%ld] = [%d]\n", i, value);
 return (i); /* Return the index if value found */
 }
-printf("Value checked array [%ld] = [%d]\n", i, array[i]);
 }
 
 return (-1); /* Return -1 if value not found */
